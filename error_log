@@ -1,0 +1,8 @@
+[12-Dec-2014 07:30:03 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/index.php on line 2
+[18-Jun-2015 11:42:57 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/index.php on line 2
+[15-Jul-2015 06:29:37 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/index.php on line 2
+[19-Jul-2015 15:13:45 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/404.php on line 2
+[02-Jul-2016 15:00:29 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/index.php on line 2
+[19-Aug-2016 09:03:58 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/index.php on line 2
+[30-Nov-2016 14:36:51 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/index.php on line 2
+[12-Dec-2016 09:55:27 UTC] PHP Fatal error:  Call to undefined function get_header() in /home/newafric/public_html/wordpress/wp-content/themes/newafricanmagazine/index.php on line 2
