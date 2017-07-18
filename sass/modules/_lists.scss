@@ -1,0 +1,196 @@
+/*
+	Stylesheet: Lists
+	Description: List Styling
+*/
+
+
+/*---- In article lists ----*/
+
+.single-article-content li {
+	list-style: disc;
+}
+
+/*---- Article List ----*/
+
+.article-image {
+	margin: 0;
+}
+
+.list-divider {
+	clear: both;
+	margin: 0;
+	border: none;
+}
+
+.post {
+	@include rem('margin-bottom', 30px);
+}
+
+.promoted-list, .medium-list, .thumb-list, .text-list {
+	h2 { margin-bottom: 0; } // Allows date to sit closer to heading
+}
+
+.thumb-list {
+	@extend .cf;
+	clear: both;
+
+	.post-title {
+		margin-top: 0;
+	}
+
+}
+
+.text-list {
+
+	h2 { 
+		@include inline-block;
+		margin: 0;
+		font-size: em(21px); 
+	}
+	p { 
+		margin-top: 0;
+		font-size: em(15px); 
+	}
+}
+
+/* Opinions */
+.opinion-list {
+	@include rem('padding-top', 10px);
+	@include rem('margin', 30px 0 50px);
+	border-top: 1px dotted;
+
+	.post-date {
+		@include inline-block;
+		@include rem('padding', $standard-padding);
+		@include rem('margin-bottom', $small-spacing);
+		font-size: em(15px);
+		color: #fff;
+		background: $primary-color;
+	}
+
+	h2 { @include rem('margin-bottom', 20px); }
+
+	.img-placeholder { @include rem('margin-bottom', 20px); }
+
+	.tags-list { 
+		float: right;
+		margin: 0;
+		font-family: $tertiary-font;
+		font-size: em(12px);
+		font-weight: bold;
+	}
+
+	.single-tag { color: $primary-color; }
+}
+
+/*---- Blog columnists (blog sidebar) ----*/
+.opinion-category-list {
+	> li {
+		@extend .cf;
+		@include rem('padding', $standard-padding 0);
+		border-bottom: 1px solid $block-color-2;
+
+		&:hover {
+			a { color: $primary-color; }
+			border-bottom: 1px dotted;			
+		}
+	}
+	.avatar {
+		float: left;
+		@include rem('width', 35px);
+		@include rem('margin-right', $standard-spacing);
+	}
+	a {
+		text-decoration: none;
+		color: $body-font-color;
+		font-size: em(18px);
+	}
+
+	h4, p { margin: 0; }
+	p { font-size: em(12px); }
+}
+
+/*---- Links (blogroll) ----*/
+.site-links {
+	h3 {
+		font-size: em(18px);
+	}
+	.hide {
+		display: none;
+	}
+}
+.blogroll {
+	> li {
+		border-bottom: 1px solid $block-color-2;
+
+		&:hover {
+			border-bottom: 1px dotted;			
+		}
+
+		a {
+			display: block;
+			@include rem('padding', $small-padding 0);
+			text-decoration: none;
+			color: $body-font-color;
+			font-size: em(18px);
+
+			&:hover {
+				color: $primary-color;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+/*---- Tags list ----*/
+.tags-list {
+	> li {
+		float: left;
+	}
+}
+
+/*---- Image List ----*/
+
+.list-images {
+	@extend .cf;
+	
+	li {
+		@include equal-span(3, 'small');
+	}
+}
+
+
+/*---- Icon List ----*/
+
+.list-icons {
+	@extend .cf;
+	
+	li {
+		float: left;
+		
+		@include rem('padding', $small-spacing);
+	}
+}
+
+
+/*---- Boxed List ----*/
+
+.list-boxed {
+	@extend .cf;
+	
+	li {
+		@include rem('margin-bottom', $standard-spacing);
+		border: 1px solid #ddd
+	}
+}
+
+
+/*---- Partners ----*/
+
+.partners {
+	p, ul, li {
+		display: inline-block;
+		
+		@include rem('margin-right', $standard-spacing);
+	}
+}
